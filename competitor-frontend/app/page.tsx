@@ -43,7 +43,7 @@ export default function Dashboard() {
     }, 3000);
 
     try {
-      const res = await fetch("http://localhost:8000/api/analyze", {
+      const res = await fetch("https://competitor-video-analysis.onrender.com/api/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -144,7 +144,7 @@ export default function Dashboard() {
               <h3>Your Strategic Report Ready</h3>
             </div>
             <a 
-              href="http://localhost:8000/report.pptx" 
+              href="https://competitor-video-analysis.onrender.com/report.pptx" 
               download
               className="btn-download"
             >
